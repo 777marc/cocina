@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block content %}
+<h1 class="text-2xl font-semibold mb-4">Recent Logs</h1>
+<pre
+  class="bg-black text-green-300 text-xs p-4 rounded overflow-auto max-h-[70vh]"
+>
+{% for line in log_lines %}{{ line }}{% endfor %}</pre
+>
+{% endblock %}

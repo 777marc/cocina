@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+<h1 class="text-2xl font-semibold mb-4">New Recipe</h1>
+<form method="post" class="space-y-4 max-w-2xl">
+  <div>
+    <label class="block text-sm mb-1">Title</label>
+    <input name="title" required class="w-full border rounded px-3 py-2" />
+  </div>
+  <div>
+    <label class="block text-sm mb-1">Short Description</label>
+    <textarea
+      name="description"
+      class="w-full border rounded px-3 py-2"
+      rows="2"
+    ></textarea>
+  </div>
+  <div>
+    <label class="block text-sm mb-1">Ingredients</label>
+    <textarea
+      name="ingredients"
+      class="w-full border rounded px-3 py-2"
+      rows="5"
+      placeholder="One per line"
+    ></textarea>
+  </div>
+  <div>
+    <label class="block text-sm mb-1">Instructions</label>
+    <textarea
+      name="instructions"
+      class="w-full border rounded px-3 py-2"
+      rows="7"
+    ></textarea>
+  </div>
+  <button class="bg-blue-600 text-white rounded px-4 py-2">Create</button>
+</form>
+{% endblock %}
